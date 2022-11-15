@@ -2,7 +2,7 @@
   "name": "testcicd",
   "version": "1.0.0",
   "description": "testcicd",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "server": "nodemon server",
     "test": "echo \"Error: no test specified\" && exit 1"
