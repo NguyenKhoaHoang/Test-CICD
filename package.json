@@ -1,0 +1,24 @@
+{
+  "name": "testcicd",
+  "version": "1.0.0",
+  "description": "testcicd",
+  "main": "index.js",
+  "scripts": {
+    "server": "nodemon server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NguyenKhoaHoang/Test-CICD.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NguyenKhoaHoang/Test-CICD/issues"
+  },
+  "homepage": "https://github.com/NguyenKhoaHoang/Test-CICD#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-generator": "^4.16.1"
+  }
+}
