@@ -15,8 +15,8 @@ commands:
     steps:
       - checkout
       - node/install-packages:
-        cache-path: ~/project/node_modules
-        app-dir: ~/project/
+          cache-path: ~/project/node_modules
+          app-dir: ~/project/
 
 jobs:
   build_and_test:
@@ -41,8 +41,8 @@ jobs:
           paths: converage
           key: v1-result-cache
       - store_artifacts: # Save coverage reports as artifacts 
-          path: coverage
-          prefix: coverage
+          path: converage
+          prefix: converage
 
 workflows:
   node_build_pipeline:
