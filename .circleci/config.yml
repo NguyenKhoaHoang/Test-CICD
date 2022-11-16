@@ -4,10 +4,10 @@ orbs:
   node: circleci/node@5.0.2
 
 executors:
-  node:
+  node14:
     docker:
-      - image: 'cimg/node;current-browsers'
-    resouce_class: medium
+      - image: 'cimg/node:14.18.2'
+    resource_class: medium
 
 commands:
   nodesetup:
@@ -15,12 +15,12 @@ commands:
     steps:
       - checkout
       - node/install-packages:
-          cache-path: ~/project/node_modules
-          app-dir: ~/project/
+         cache-path: ~/project/node_modules
+         app-dir: ~/project/
 
 jobs:
   build_and_test:
-    executor: 'node'
+    executor: 'node14'
     steps:
       - nodesetup
       - run:
@@ -38,16 +38,13 @@ jobs:
             chmod u+x coveragetest.sh
             ./coveragetest.sh
       - save_cache:
-          paths: converage
+          paths: coverage
           key: v1-result-cache
       - store_artifacts: # Save coverage reports as artifacts 
-          path: converage
-          prefix: converage
+          path: coverage
+          prefix: coverage
 
 workflows:
   node_build_pipeline:
     jobs:
-      - build_and_test     
-
-
-
+      - build_and_test
