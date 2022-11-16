@@ -19,8 +19,10 @@
   },
   "homepage": "https://github.com/NguyenKhoaHoang/Test-CICD#readme",
   "dependencies": {
+    "coverage": "^0.4.1",
     "express": "^4.18.2",
-    "express-generator": "^4.16.1"
+    "express-generator": "^4.16.1",
+    "nyc": "^15.1.0"
   },
   "publishConfig": {
     "registry": "http://localhost:8081/repository/npm-hosted-all/"
