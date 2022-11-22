@@ -37,26 +37,16 @@ jobs:
             npx lcov-total coverage/lcov.info > /tmp/result
             chmod u+x coveragetest.sh
             ./coveragetest.sh
-      # - save_cache:
-      #     paths: coverage
-      #     key: v1-result-cache
-      # - store_artifacts: # Save coverage reports as artifacts 
-      #     path: coverage
-      #     prefix: coverage
       - save_cache:
-          paths: awesome-reports
+          paths: coverage
           key: v1-result-cache
       - store_artifacts: # Save coverage reports as artifacts 
-          path: awesome-reports
-          prefix: awesome-reports
+          path: coverage
+          prefix: coverage
 
 workflows:
   node_build_pipeline:
     jobs:
-      - node/test:
-          test-results-for: mocha
-      - build_and_test:
-          requires: 
-            - node/test
+      - build_and_test
       
           
