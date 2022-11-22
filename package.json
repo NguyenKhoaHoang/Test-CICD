@@ -25,6 +25,8 @@
     "colors": "^1.1.2",
     "command-line-args": "^4.0.7",
     "coverage": "^0.4.1",
+    "mocha-junit-reporter": "^2.2.0",
+    "mocha-multi": "^1.1.7",
     "request": "^2.83.0"
   }
 }

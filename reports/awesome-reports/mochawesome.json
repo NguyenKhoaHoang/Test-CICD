@@ -5,9 +5,9 @@
     "passes": 5,
     "pending": 0,
     "failures": 0,
-    "start": "2022-11-17T10:13:28.152Z",
-    "end": "2022-11-17T10:13:28.160Z",
-    "duration": 8,
+    "start": "2022-11-22T04:22:22.466Z",
+    "end": "2022-11-22T04:22:22.476Z",
+    "duration": 10,
     "testsRegistered": 5,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -19,7 +19,7 @@
     "pendingPercentClass": "danger"
   },
   "suites": {
-    "uuid": "65fb4f3b-924c-422c-b5aa-41065baaa4bb",
+    "uuid": "aaa5466b-3dda-4581-bd0d-c9077e321669",
     "title": "",
     "fullFile": "",
     "file": "",
@@ -28,7 +28,7 @@
     "tests": [],
     "suites": [
       {
-        "uuid": "e219d0a0-fb67-43d2-8225-d7ed98920c0f",
+        "uuid": "b7e96ebe-b003-4aae-8045-6584d58a8ef9",
         "title": "Test that the data fetched from OpenWeatherMap is processed correctly",
         "fullFile": "/home/bonvahoang123/Documents/TestCICD/test/preparing-data-test.js",
         "file": "/test/preparing-data-test.js",
@@ -48,14 +48,14 @@
             "code": "var callback = sinon.stub();\ncallback.withArgs(\"London\").returns(rawWeatherData);\n//TODO",
             "err": {},
             "isRoot": false,
-            "uuid": "3a527ec1-418c-4119-aa67-bb23d087a31e",
+            "uuid": "207df5e5-71be-4177-b99c-d10105966c1a",
             "isHook": false,
             "skipped": false
           }
         ],
         "suites": [],
         "passes": [
-          "3a527ec1-418c-4119-aa67-bb23d087a31e"
+          "207df5e5-71be-4177-b99c-d10105966c1a"
         ],
         "failures": [],
         "pending": [],
@@ -66,7 +66,7 @@
         "_timeout": 2000
       },
       {
-        "uuid": "83e7e3f8-3585-4849-813f-c5e3f3c7638e",
+        "uuid": "7625f0ec-9d4b-4f0b-9ad5-06b3277a50f2",
         "title": "Test the weather kit module's basic functionality",
         "fullFile": "/home/bonvahoang123/Documents/TestCICD/test/weather-kit-test.js",
         "file": "/test/weather-kit-test.js",
@@ -86,7 +86,7 @@
             "code": "expect(helloWeather.doINeed.umbrella(monday)).to.be.a('boolean');\nexpect(helloWeather.doINeed.umbrella(tuesday)).equal(false);\nexpect(helloWeather.doINeed.umbrella(wednesday)).equal(false);\nexpect(helloWeather.doINeed.umbrella(friday)).equal(true);",
             "err": {},
             "isRoot": false,
-            "uuid": "028a3dd4-0c88-452b-ba3e-ffc9fe77db22",
+            "uuid": "9d389c6e-a099-49da-8e7d-cff9627de1b2",
             "isHook": false,
             "skipped": false
           },
@@ -103,7 +103,7 @@
             "code": "helloWeather.doINeed.suncream(monday).should.be.a('boolean');\nhelloWeather.doINeed.suncream(monday).should.equal(false);\nhelloWeather.doINeed.suncream(tuesday).should.equal(false);\nhelloWeather.doINeed.suncream(wednesday).should.equal(true);",
             "err": {},
             "isRoot": false,
-            "uuid": "fb4f3a67-6df1-469c-b4b8-dd61ce6bf872",
+            "uuid": "6ecdc698-82ae-4047-8737-cccdbfe784b0",
             "isHook": false,
             "skipped": false
           },
@@ -111,7 +111,7 @@
             "title": "should return true if jumper is required",
             "fullTitle": "Test the weather kit module's basic functionality should return true if jumper is required",
             "timedOut": false,
-            "duration": 1,
+            "duration": 0,
             "state": "passed",
             "speed": "fast",
             "pass": true,
@@ -120,7 +120,7 @@
             "code": "assert.typeOf(helloWeather.doINeed.jumper(monday), 'boolean');\nassert.typeOf(helloWeather.doINeed.jumper(tuesday), 'boolean', 'boolean returned');\nassert.equal(\n    helloWeather.doINeed.jumper(wednesday),\n    false,\n    'should return false, because it is very warm on wednesday'\n);\nassert.equal(helloWeather.doINeed.jumper(thuresday), true)",
             "err": {},
             "isRoot": false,
-            "uuid": "b60ef4fe-5962-4c45-b6ab-dfdfd37b3449",
+            "uuid": "b6403171-0144-4539-ad1f-77765b9ee181",
             "isHook": false,
             "skipped": false
           },
@@ -137,22 +137,22 @@
             "code": "expect(helloWeather.doINeed.water(monday)).equal(true);",
             "err": {},
             "isRoot": false,
-            "uuid": "d84633d8-02e2-4dfb-878c-da2f31d285e3",
+            "uuid": "f339067a-e749-40e8-af70-e07a27abff32",
             "isHook": false,
             "skipped": false
           }
         ],
         "suites": [],
         "passes": [
-          "028a3dd4-0c88-452b-ba3e-ffc9fe77db22",
-          "fb4f3a67-6df1-469c-b4b8-dd61ce6bf872",
-          "b60ef4fe-5962-4c45-b6ab-dfdfd37b3449",
-          "d84633d8-02e2-4dfb-878c-da2f31d285e3"
+          "9d389c6e-a099-49da-8e7d-cff9627de1b2",
+          "6ecdc698-82ae-4047-8737-cccdbfe784b0",
+          "b6403171-0144-4539-ad1f-77765b9ee181",
+          "f339067a-e749-40e8-af70-e07a27abff32"
         ],
         "failures": [],
         "pending": [],
         "skipped": [],
-        "duration": 2,
+        "duration": 1,
         "root": false,
         "rootEmpty": false,
         "_timeout": 2000
