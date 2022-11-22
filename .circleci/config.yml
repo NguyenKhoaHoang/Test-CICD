@@ -55,8 +55,8 @@ workflows:
     jobs:
       - node/test:
           test-results-for: mocha
-      - build_and_test
-          required: 
+      - build_and_test:
+          requires: 
             - node/test
       
           
