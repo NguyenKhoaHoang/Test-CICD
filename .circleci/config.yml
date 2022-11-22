@@ -37,12 +37,12 @@ jobs:
             npx lcov-total coverage/lcov.info > /tmp/result
             chmod u+x coveragetest.sh
             ./coveragetest.sh
-      - save_cache:
-          paths: coverage
-          key: v1-result-cache
-      - store_artifacts: # Save coverage reports as artifacts 
-          path: coverage
-          prefix: coverage
+      # - save_cache:
+      #     paths: coverage
+      #     key: v1-result-cache
+      # - store_artifacts: # Save coverage reports as artifacts 
+      #     path: coverage
+      #     prefix: coverage
       - save_cache:
           paths: awesome-reports
           key: v1-result-cache
