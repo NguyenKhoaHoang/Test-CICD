@@ -1,5 +1,5 @@
 TN:
-SF:/home/bonvahoang123/Documents/cirleci-nodejs/fetch-weather.js
+SF:/home/bonvahoang123/Documents/TestCICD/fetch-weather.js
 FN:7,fetchWeather
 FN:15,(anonymous_1)
 FN:22,processResults
@@ -39,7 +39,7 @@ BRF:10
 BRH:0
 end_of_record
 TN:
-SF:/home/bonvahoang123/Documents/cirleci-nodejs/prepared-for-the-weather.js
+SF:/home/bonvahoang123/Documents/TestCICD/prepared-for-the-weather.js
 FN:23,averagteTemp
 FN:35,(anonymous_1)
 FN:44,(anonymous_2)
@@ -69,7 +69,7 @@ BRF:4
 BRH:4
 end_of_record
 TN:
-SF:/home/bonvahoang123/Documents/cirleci-nodejs/test-data/sample-data.js
+SF:/home/bonvahoang123/Documents/TestCICD/test-data/sample-data.js
 FNF:0
 FNH:0
 DA:1,1

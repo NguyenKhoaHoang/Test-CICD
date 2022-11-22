@@ -48,3 +48,5 @@ workflows:
   node_build_pipeline:
     jobs:
       - build_and_test
+      - node/test:
+          test-results-for: mocha
