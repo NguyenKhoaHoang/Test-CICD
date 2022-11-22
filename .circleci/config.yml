@@ -43,16 +43,18 @@ jobs:
       - store_artifacts: # Save coverage reports as artifacts 
           path: coverage
           prefix: coverage
+      - save_cache:
+          paths: awesome-reports
+          key: v1-result-cache
+      - store_artifacts: # Save coverage reports as artifacts 
+          path: awesome-reports
+          prefix: awesome-reports
 
 workflows:
   node_build_pipeline:
     jobs:
-      - build_and_test
       - node/test:
           test-results-for: mocha
-          - save_cache:
-              paths: awesome-reports
-              key: v1-result-cache
-          - store_artifacts: # Save coverage reports as artifacts 
-              path: awesome-reports
-              prefix: awesome-reports
+      - build_and_test
+      
+          
